@@ -13,6 +13,7 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity // Define uma entidade --> Gera a table.
@@ -40,7 +41,7 @@ public class Produto {
 	private String descricao;
 	
 	// ATRIBUTO PREÇO 
-	@NotBlank(message = "O preço do produto é obrigatório.")
+	@NotNull(message = "O preço do produto é obrigatório.")
 	@DecimalMin(value = "0.01", message = "O preço do produto deve ser maior que zero.") // Especifica valor mínimo permitido (evita preços negativos). 
 	@Digits(integer = 6, fraction = 2, message = "O preço dos produtos deve ter no máximo 06 dígitos inteiros e 02 decimais.") // Define número máximo de dígitos inteiros e decimais permitidos. 
 	private BigDecimal preco; 

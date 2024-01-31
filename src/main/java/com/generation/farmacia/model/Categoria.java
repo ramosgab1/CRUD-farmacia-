@@ -64,7 +64,7 @@ public class Categoria {
 		return descricao;
 	}
 
-	public void setDescricaocategoria(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
