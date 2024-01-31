@@ -24,7 +24,7 @@ import com.generation.farmacia.repository.CategoriaRepository;
 import jakarta.validation.Valid;
 
 @RestController // Define a classe como do tipo RestController.
-@RequestMapping("/categorias") // Mapeia as solicitações para os métodos da classe Controller.
+@RequestMapping("/categoria") // Mapeia as solicitações para os métodos da classe Controller.
 @CrossOrigin(origins = "*", allowedHeaders = "*") // Permite o recebimento de requisições de fora do domínio. 
 public class CategoriaController {
 
