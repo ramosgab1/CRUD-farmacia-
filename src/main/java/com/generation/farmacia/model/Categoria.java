@@ -46,16 +46,16 @@ public class Categoria {
 		return nome;
 	}
 
-	public void setNome(String nomecategoria) {
-		this.nome = nomecategoria;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getDescricao() {
 		return descricao;
 	}
 
-	public void setDescrica(String descricaocategoria) {
-		this.descricao = descricaocategoria;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	} 
 
 }
