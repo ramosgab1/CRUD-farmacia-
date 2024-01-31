@@ -38,7 +38,10 @@ public class Categoria {
 	private String descricao;
 	
 	// RELAÇÃO ONE TO MANY COM PRODUTO (uma categoria para vários produtos --> 1:N).   
-		
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("categoria")
+	private List<Produto> produto; 
+	
 	// GERAÇÃO DE GETTERS E SETTERS. 
 	
 	public Long getId() {
@@ -66,5 +69,11 @@ public class Categoria {
 	}
 
 	// GETTERS E SETTERS DE PRODUTO 
+	public List<Produto> getProduto() {
+		return produto;
+	}
 
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
 }
