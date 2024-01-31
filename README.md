@@ -1,7 +1,7 @@
 ![Proj Loja de Games](https://github.com/ramosgab1/CRUD-farmacia-/assets/151580909/955628e1-5445-4f00-934a-ef67d0c22364)
 # API Backend para Farmácia.
 
-Esta é uma API backend para uma aplicação de farmácia, que permite gerenciar categorias e produtos. Sesenvolvida no Bootcamp FullStack Java React da Generation Brasil, turma 70. 
+Esta é uma API backend para uma aplicação de farmácia, que permite gerenciar categorias e produtos. Desenvolvida no Bootcamp FullStack Java React da Generation Brasil, turma 70. 
 
 ## Funcionalidades.
 
@@ -25,9 +25,9 @@ Antes de iniciar a aplicação, certifique-se de configurar o banco de dados MyS
 2. Configure as propriedades do banco de dados no arquivo `application.properties`.
 3. Execute a aplicação: A API estará disponível em `http://localhost:8080`.
 
-## Endpoints
+## Endpoints.
 
-### Categorias
+### Categorias.
 
 - `GET /categorias`: Retorna todas as categorias.
 - `GET /categorias/{id}`: Retorna uma categoria específica pelo ID.
@@ -36,7 +36,7 @@ Antes de iniciar a aplicação, certifique-se de configurar o banco de dados MyS
 - `PUT /categorias/{id}`: Atualiza uma categoria existente pelo ID.
 - `DELETE /categorias/{id}`: Deleta uma categoria existente pelo ID.
 
-### Produtos
+### Produtos.
 
 - `GET /produtos`: Retorna todos os produtos.
 - `GET /produtos/{id}`: Retorna um produto específico pelo ID.
@@ -45,6 +45,6 @@ Antes de iniciar a aplicação, certifique-se de configurar o banco de dados MyS
 - `PUT /produtos/{id}`: Atualiza um produto existente pelo ID.
 - `DELETE /produtos/{id}`: Deleta um produto existente pelo ID.
 
-## Contribuindo
+## Contribuindo.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
