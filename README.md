@@ -21,7 +21,7 @@ Antes de iniciar a aplicação, certifique-se de configurar o banco de dados MyS
 
 ## Configuração da Aplicação.
 
-1. Clone o repositório: git clone https://github.com/seu-usuario/api-farmacia.git
+1. Clone o repositório
 2. Configure as propriedades do banco de dados no arquivo `application.properties`.
 3. Execute a aplicação: A API estará disponível em `http://localhost:8080`.
 
