@@ -1,9 +1,16 @@
 package com.generation.farmacia.model;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -23,15 +30,15 @@ public class Categoria {
 	// ATRIBUTO NOME 
 	@NotBlank(message = "O nome da categoria não pode ser nulo ou em branco.") // Não permite espaços nulos ou em branco. 
 	@Size(min = 5, max = 100, message = "O nome da categoria deve ter no mínimo 05 e no máximo 100 caracteres.")
-	private String nomecategoria; 
+	private String nome; 
 	
 	// ATRIBUTO DESCRIÇÃO
 	@NotBlank(message = "A descrição da categoria não pode ser nula ou em branco.")
 	@Size(min = 5, max = 255, message = "A descrição da categoria deve ter no mínimo 05 e no máximo 255 caracteres.")
-	private String descricaocategoria;
+	private String descricao;
 	
-	// RELAÇÃO ONE TO MANY COM PRODUTO (uma categoria para vários produtos --> 1:N).  
-
+	// RELAÇÃO ONE TO MANY COM PRODUTO (uma categoria para vários produtos --> 1:N).   
+		
 	// GERAÇÃO DE GETTERS E SETTERS. 
 	
 	public Long getId() {
@@ -42,20 +49,22 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getNomecategoria() {
-		return nomecategoria;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomecategoria(String nomecategoria) {
-		this.nomecategoria = nomecategoria;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public String getDescricaocategoria() {
-		return descricaocategoria;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescricaocategoria(String descricaocategoria) {
-		this.descricaocategoria = descricaocategoria;
-	} 
+	public void setDescricaocategoria(String descricao) {
+		this.descricao = descricao;
+	}
+
+	// GETTERS E SETTERS DE PRODUTO 
 
 }

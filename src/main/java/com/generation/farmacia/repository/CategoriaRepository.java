@@ -11,5 +11,5 @@ import com.generation.farmacia.model.Categoria;
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 
 	// @Param --> define a variável titulo como parâmtro de consulta. 
-	public List <Categoria> findAllByNomeContainingIgnoreCase(@Param("titulo") String titulo);
+	public List <Categoria> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
 }
